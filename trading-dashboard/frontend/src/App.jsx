@@ -10,7 +10,7 @@ export default function App() {
   const { candles, indicators, loading, error, refetch } = useOhlcv({
     symbol,
     timeframe,
-    exchange: 'binance',
+    exchange: 'kraken',
   })
 
   return (
