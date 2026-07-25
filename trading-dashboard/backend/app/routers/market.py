@@ -11,7 +11,7 @@ async def get_ohlcv(
     symbol: str = "BTC/USDT",
     timeframe: str = "1h",
     limit: int = 200,
-    exchange: str = "binance",
+    exchange: str = "kraken",
 ):
     try:
         candles = await market_data_service.get_ohlcv(symbol, timeframe, limit, exchange)
