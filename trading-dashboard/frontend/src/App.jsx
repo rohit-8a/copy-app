@@ -2,6 +2,7 @@ import { useState } from 'react'
 import CandlestickChart from './components/CandlestickChart'
 import ControlBar from './components/ControlBar'
 import StatsPanel from './components/StatsPanel'
+import SentimentPanel from './components/SentimentPanel'
 import { useOhlcv } from './hooks/useOhlcv'
 
 export default function App() {
@@ -33,6 +34,8 @@ export default function App() {
       <StatsPanel indicators={indicators} symbol={symbol} loading={loading} error={error} />
 
       <CandlestickChart candles={candles} />
+
+      <SentimentPanel />
     </div>
   )
 }
